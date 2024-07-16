@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Teacher</class>
+ <widget class="QWidget" name="Teacher">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="QWidget" name="TeacherCourseInfoP">
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0" alignment="Qt::AlignHCenter">
+        <widget class="QWidget" name="widget_9" native="true">
+         <property name="styleSheet">
+          <string notr="true">#widget_9{
+
+	background-color: rgba(104, 240, 220,180);
+border-radius:25px;
+}</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget_10" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QLabel" name="label_18">
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;当前位置：首页/查看课程信息&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="widget_11" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_7">
+                <item alignment="Qt::AlignLeft">
+                 <widget class="QLabel" name="label_8">
+                  <property name="text">
+                   <string>课程信息</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignTop">
+              <widget class="QTableWidget" name="CourseInfo_table">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="sizeAdjustPolicy">
+                <enum>QAbstractScrollArea::AdjustToContents</enum>
+               </property>
+               <property name="editTriggers">
+                <set>QAbstractItemView::NoEditTriggers</set>
+               </property>
+               <property name="selectionMode">
+                <enum>QAbstractItemView::NoSelection</enum>
+               </property>
+               <attribute name="horizontalHeaderVisible">
+                <bool>false</bool>
+               </attribute>
+               <attribute name="verticalHeaderVisible">
+                <bool>false</bool>
+               </attribute>
+               <row>
+                <property name="text">
+                 <string>新建行</string>
+                </property>
+               </row>
+               <column>
+                <property name="text">
+                 <string>新建列</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>新建列</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>新建列</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>新建列</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>学分</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>学时</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>新建列</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>新建列</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>新建列</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>新建列</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>上课地点</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>修读对象</string>
+                </property>
+               </column>
+               <item row="0" column="0">
+                <property name="text">
+                 <string>课程编码</string>
+                </property>
+               </item>
+               <item row="0" column="1">
+                <property name="text">
+                 <string>课程名称</string>
+                </property>
+               </item>
+               <item row="0" column="2">
+                <property name="text">
+                 <string>开课学院</string>
+                </property>
+               </item>
+               <item row="0" column="3">
+                <property name="text">
+                 <string>课程类别</string>
+                </property>
+               </item>
+               <item row="0" column="4">
+                <property name="text">
+                 <string>学分</string>
+                </property>
+               </item>
+               <item row="0" column="5">
+                <property name="text">
+                 <string>学时</string>
+                </property>
+               </item>
+               <item row="0" column="6">
+                <property name="text">
+                 <string>已选人数</string>
+                </property>
+               </item>
+               <item row="0" column="7">
+                <property name="text">
+                 <string>考试方式</string>
+                </property>
+               </item>
+               <item row="0" column="8">
+                <property name="text">
+                 <string>上课星期</string>
+                </property>
+               </item>
+               <item row="0" column="9">
+                <property name="text">
+                 <string>上课节次</string>
+                </property>
+               </item>
+               <item row="0" column="10">
+                <property name="text">
+                 <string>上课地点</string>
+                </property>
+               </item>
+               <item row="0" column="11">
+                <property name="text">
+                 <string>修读对象</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>上课时间</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="widget_13" native="true">
+               <layout class="QGridLayout" name="gridLayout_4">
+                <item row="0" column="0" alignment="Qt::AlignLeft">
+                 <widget class="QTableWidget" name="Schedule_table">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>916</width>
+                    <height>752</height>
+                   </size>
+                  </property>
+                  <property name="sizeAdjustPolicy">
+                   <enum>QAbstractScrollArea::AdjustToContents</enum>
+                  </property>
+                  <property name="editTriggers">
+                   <set>QAbstractItemView::NoEditTriggers</set>
+                  </property>
+                  <property name="selectionMode">
+                   <enum>QAbstractItemView::NoSelection</enum>
+                  </property>
+                  <property name="selectionBehavior">
+                   <enum>QAbstractItemView::SelectItems</enum>
+                  </property>
+                  <property name="showGrid">
+                   <bool>true</bool>
+                  </property>
+                  <attribute name="horizontalHeaderVisible">
+                   <bool>false</bool>
+                  </attribute>
+                  <attribute name="horizontalHeaderStretchLastSection">
+                   <bool>false</bool>
+                  </attribute>
+                  <attribute name="verticalHeaderVisible">
+                   <bool>false</bool>
+                  </attribute>
+                  <attribute name="verticalHeaderHighlightSections">
+                   <bool>true</bool>
+                  </attribute>
+                  <row>
+                   <property name="text">
+                    <string>1</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>新建行</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>新建行</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>新建行</string>
+                   </property>
+                  </row>
+                  <row>
+                   <property name="text">
+                    <string>新建行</string>
+                   </property>
+                  </row>
+                  <column>
+                   <property name="text">
+                    <string>节次</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>时间</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>星期日</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>星期一</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>星期二</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>星期三</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>星期四</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>星期五</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>星期六</string>
+                   </property>
+                  </column>
+                  <item row="0" column="0">
+                   <property name="text">
+                    <string>节次</string>
+                   </property>
+                  </item>
+                  <item row="0" column="1">
+                   <property name="text">
+                    <string>时间</string>
+                   </property>
+                  </item>
+                  <item row="0" column="2">
+                   <property name="text">
+                    <string>星期日</string>
+                   </property>
+                  </item>
+                  <item row="0" column="3">
+                   <property name="text">
+                    <string>星期一</string>
+                   </property>
+                  </item>
+                  <item row="0" column="4">
+                   <property name="text">
+                    <string>星期二</string>
+                   </property>
+                  </item>
+                  <item row="0" column="5">
+                   <property name="text">
+                    <string>星期三</string>
+                   </property>
+                  </item>
+                  <item row="0" column="6">
+                   <property name="text">
+                    <string>星期四</string>
+                   </property>
+                  </item>
+                  <item row="0" column="7">
+                   <property name="text">
+                    <string>星期五</string>
+                   </property>
+                  </item>
+                  <item row="0" column="8">
+                   <property name="text">
+                    <string>星期六</string>
+                   </property>
+                  </item>
+                  <item row="1" column="0">
+                   <property name="text">
+                    <string>第一节</string>
+                   </property>
+                  </item>
+                  <item row="1" column="1">
+                   <property name="text">
+                    <string>8：00~10：20</string>
+                   </property>
+                  </item>
+                  <item row="2" column="0">
+                   <property name="text">
+                    <string>第二节</string>
+                   </property>
+                  </item>
+                  <item row="2" column="1">
+                   <property name="text">
+                    <string>10：40~12：10</string>
+                   </property>
+                  </item>
+                  <item row="3" column="0">
+                   <property name="text">
+                    <string>第三节</string>
+                   </property>
+                  </item>
+                  <item row="3" column="1">
+                   <property name="text">
+                    <string>15：30~18：00</string>
+                   </property>
+                  </item>
+                  <item row="4" column="0">
+                   <property name="text">
+                    <string>第四节</string>
+                   </property>
+                  </item>
+                  <item row="4" column="1">
+                   <property name="text">
+                    <string>20：00~22：20</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TeacherCourseStudentP">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0" alignment="Qt::AlignHCenter">
+        <widget class="QWidget" name="widget_5" native="true">
+         <property name="styleSheet">
+          <string notr="true">#widget_5{
+
+	background-color: rgba(104, 240, 220,180);
+border-radius:25px;
+}</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_17">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;当前位置：首页/查看课程所选学生信息&lt;/span&gt;&lt;/p&gt;&lt;p&gt;在本页面可查询修读了该课程的学生的基本信息，默认学年为当前学年&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QWidget" name="widget_6" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item alignment="Qt::AlignLeft">
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>课程名称</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignLeft">
+              <widget class="QComboBox" name="StuInfoCourseBox">
+               <item>
+                <property name="text">
+                 <string/>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>学年</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="StuInfoTime_Box">
+               <item>
+                <property name="text">
+                 <string/>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2023</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2022</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2021</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2020</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2019</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2018</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2017</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QWidget" name="widget_7" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>学生姓名</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="StuInfoNameLine"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>学生学号</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="StuInfoINumLine"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QWidget" name="widget_12" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>学院</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="StuInfoInstituteBox">
+               <item>
+                <property name="text">
+                 <string/>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>格兰芬多</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>拉文克劳</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>赫奇帕奇</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>斯莱特林</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_10">
+               <property name="text">
+                <string>年级</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="StuInfoGradeBox">
+               <item>
+                <property name="text">
+                 <string/>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>一年级</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>二年级</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>三年级</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>四年级</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>五年级</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>六年级</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>七年级</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QWidget" name="widget_8" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QPushButton" name="StuInfoButton">
+               <property name="text">
+                <string>查询</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QTableWidget" name="StuInfoTable">
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustToContents</enum>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::NoSelection</enum>
+            </property>
+            <attribute name="horizontalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <row>
+             <property name="text">
+              <string>新建行</string>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>序号</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>学生学号</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>学生姓名</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>性别</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>联系方式</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>学院</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>年级</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>所选课程</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>开课学年</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>录入成绩</string>
+             </property>
+            </column>
+            <item row="0" column="0">
+             <property name="text">
+              <string>序号</string>
+             </property>
+            </item>
+            <item row="0" column="1">
+             <property name="text">
+              <string>学生学号</string>
+             </property>
+            </item>
+            <item row="0" column="2">
+             <property name="text">
+              <string>学生姓名</string>
+             </property>
+            </item>
+            <item row="0" column="3">
+             <property name="text">
+              <string>性别</string>
+             </property>
+            </item>
+            <item row="0" column="4">
+             <property name="text">
+              <string>联系方式</string>
+             </property>
+            </item>
+            <item row="0" column="5">
+             <property name="text">
+              <string>学院</string>
+             </property>
+            </item>
+            <item row="0" column="6">
+             <property name="text">
+              <string>年级</string>
+             </property>
+            </item>
+            <item row="0" column="7">
+             <property name="text">
+              <string>所选课程</string>
+             </property>
+            </item>
+            <item row="0" column="8">
+             <property name="text">
+              <string>开课学年</string>
+             </property>
+            </item>
+            <item row="0" column="9">
+             <property name="text">
+              <string>成绩</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TeacherGradesP">
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0" alignment="Qt::AlignHCenter">
+        <widget class="QWidget" name="widget" native="true">
+         <property name="styleSheet">
+          <string notr="true">#widget{
+
+	background-color: rgba(104, 240, 220,180);
+border-radius:25px;
+}</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="label_15">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;当前页面：首页/学生考试成绩&lt;/span&gt;&lt;/p&gt;&lt;p&gt;当前页面可以查询所有学生成绩，并且可以在成绩录入开始时录入本学年的学生的成绩&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QWidget" name="widget_2" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item alignment="Qt::AlignLeft">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>课程名称</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignLeft">
+              <widget class="QComboBox" name="scoresCourseName_Box">
+               <item>
+                <property name="text">
+                 <string/>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_12">
+               <property name="text">
+                <string>学年</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="scoresYear_Box">
+               <item>
+                <property name="text">
+                 <string/>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2023</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2022</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2021</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2020</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2019</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2018</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2017</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QWidget" name="widget_3" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>学生姓名</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="scoresName_line"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>学生学号</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="scoresNum_line"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QWidget" name="widget_14" native="true">
+            <layout class="QGridLayout" name="gridLayout_6">
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="scores_checkBox">
+               <property name="text">
+                <string>仅查询未录入成绩的学生</string>
+               </property>
+               <property name="tristate">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QWidget" name="widget_4" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QPushButton" name="scores_button">
+               <property name="text">
+                <string>查询</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QTableWidget" name="scores_table">
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustToContents</enum>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::NoSelection</enum>
+            </property>
+            <attribute name="horizontalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <row>
+             <property name="text">
+              <string>新建行</string>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>学生学号</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>学生姓名</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>课程名称</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>开课学年</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>录入成绩</string>
+             </property>
+            </column>
+            <item row="0" column="0">
+             <property name="text">
+              <string>学生学号</string>
+             </property>
+            </item>
+            <item row="0" column="1">
+             <property name="text">
+              <string>学生姓名</string>
+             </property>
+            </item>
+            <item row="0" column="2">
+             <property name="text">
+              <string>课程名称</string>
+             </property>
+            </item>
+            <item row="0" column="3">
+             <property name="text">
+              <string>学年</string>
+             </property>
+            </item>
+            <item row="0" column="4">
+             <property name="text">
+              <string>成绩</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TeacherEvaluationP">
+      <layout class="QGridLayout" name="gridLayout_8">
+       <item row="0" column="0" alignment="Qt::AlignHCenter">
+        <widget class="QWidget" name="widget_15" native="true">
+         <property name="styleSheet">
+          <string notr="true">#widget_15{
+
+	background-color: rgba(104, 240, 220,180);
+border-radius:25px;
+}</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QLabel" name="label_16">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;当前位置：首页/评教信息查看&lt;/span&gt;&lt;/p&gt;&lt;p&gt;当筛选条件为空时，默认查询全部信息，其中学年默认为当前学年&lt;/p&gt;&lt;p&gt;点击 &lt;span style=&quot; font-style:italic;&quot;&gt;查询具体信息 &lt;/span&gt;可以查看符合筛选条件的评教信息&lt;/p&gt;&lt;p&gt;点击 &lt;span style=&quot; font-style:italic;&quot;&gt;查询未评教人数 &lt;/span&gt;可查看当年的未评教的人数，请注意先在开课学年里选择当前学年&lt;/p&gt;&lt;p&gt;点击 &lt;span style=&quot; font-style:italic;&quot;&gt;查询平均评教分数 &lt;/span&gt;可以查看每学年每学科的平均评教分数，此时不会显示评语。如果没有评教，则不会显示课程&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QWidget" name="widget_16" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item alignment="Qt::AlignLeft">
+              <widget class="QLabel" name="label_13">
+               <property name="text">
+                <string>课程名称</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignLeft">
+              <widget class="QComboBox" name="evaluationCourseName_Box">
+               <item>
+                <property name="text">
+                 <string/>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>学年</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="evaluationYear_Box">
+               <item>
+                <property name="text">
+                 <string/>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2023</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2022</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2021</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2020</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2019</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2018</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2017</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QWidget" name="widget_19" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <widget class="QPushButton" name="evaluation_button">
+               <property name="text">
+                <string>查询具体信息</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="evaluationCount_button">
+               <property name="text">
+                <string>查询未评教人数</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="evaluationAver_button">
+               <property name="text">
+                <string>查询平均评教分数</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QTableWidget" name="evaluation_table">
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustToContents</enum>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::NoSelection</enum>
+            </property>
+            <attribute name="horizontalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <row>
+             <property name="text">
+              <string>新建行</string>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>学生学号</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>课程编码</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>课程名称</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>学年</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>学生姓名</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>录入成绩</string>
+             </property>
+            </column>
+            <item row="0" column="0">
+             <property name="text">
+              <string>序号</string>
+             </property>
+            </item>
+            <item row="0" column="1">
+             <property name="text">
+              <string>课程编码</string>
+             </property>
+            </item>
+            <item row="0" column="2">
+             <property name="text">
+              <string>课程名称</string>
+             </property>
+            </item>
+            <item row="0" column="3">
+             <property name="text">
+              <string>学年</string>
+             </property>
+            </item>
+            <item row="0" column="4">
+             <property name="text">
+              <string>评教成绩</string>
+             </property>
+            </item>
+            <item row="0" column="5">
+             <property name="text">
+              <string>评语</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>resource/icon/exit.png</file>
+        <file>resource/icon/home.png</file>
+        <file>resource/icon/magic.png</file>
+        <file>resource/icon/people.png</file>
+        <file>resource/icon/mouse.png</file>
+        <file>resource/icon/see.png</file>
+        <file>resource/icon/nosee.png</file>
+        <file>resource/icon/click.png</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file>resource/all.qss</file>
+    </qresource>
+    <qresource prefix="/font">
+        <file>resource/HARRYP__.TTF</file>
+        <file>resource/myFont.ttf</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>resource/img/background.png</file>
+        <file>resource/img/sltl.png</file>
+        <file>resource/img/sqpq.png</file>
+        <file>resource/img/glfd.png</file>
+        <file>resource/img/lwkl.png</file>
+    </qresource>
+</RCC>

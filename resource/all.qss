@@ -1,0 +1,62 @@
+QLineEdit{
+    border:2px solid rgb(20,196,188);
+    border-radius:10px;/*边框粗细-颜色-圆角设置*/
+}
+
+QPushButton{
+    border:3px solid #9FC9C7;
+    border-radius:10px;/*边框粗细-颜色-圆角设置*/
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style:groove;
+    background-color:#86eef5;
+}
+QPushButton:hover{
+    background-color:#79edf4;
+}
+QPushButton:pressed{
+    background-color:#66eaf4;
+    border-style:ridge;
+}
+QPushButton#people{
+    border-style:hidden;
+    background-color: none;
+}
+
+QToolButton:hover{
+    padding-bottom: 10px;
+}
+
+QToolTip{
+    background-color: rgba(151, 222, 212,0.65);
+    border-radius:10px;
+    border-style:outset;
+}
+
+QRadioButton::indicator{
+    width:15px;
+    height:15px;
+    border-radius:8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+QRadioButton::indicator:checked {
+    background-color:qlineargradient(spread:pad, x1:0.057971, y1:0.102, x2:0.986, y2:0.9715, stop:0.0338164 rgba(73, 188, 246, 180), stop:0.956522 rgba(73, 222, 178, 180));
+}
+QRadioButton::indicator:unchecked {
+    background-color:rgb(255, 255, 255);
+}
+
+QTableWidget
+{
+    gridline-color: rgb(20,196,188);    /*表格中的网格线条颜色*/
+    background-color: rgba(210, 180, 140, 180); /* 棕色 */
+    selection-background-color:rgba(197, 169, 131, 150);   /*鼠标选中时背景色*/
+    border:1px solid rgb(20,196,188);  /*边框线的宽度、颜色*/
+    /*border:none;    去除边界线*/
+    border-radius:20px;
+   /*  padding:10px 10px; */   /*表格与边框的间距*/
+}
