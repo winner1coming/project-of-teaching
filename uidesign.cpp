@@ -145,7 +145,7 @@ void uiDesign::mouseReleaseEvent(QMouseEvent *event){
 
 
 //公告
-void uiDesign::showNoice(QTableWidget* table){
+void uiDesign::showNoice(QTableWidget* table, QString userID){
     deleteTabelItem(table);
     QSqlQuery noticep;
     noticep.exec("SELECT * FROM noticep");
@@ -154,10 +154,30 @@ void uiDesign::showNoice(QTableWidget* table){
         QString time=noticep.value(0).toString();
         QString title=noticep.value(1).toString();
         QString content=noticep.value(2).toString();
+        QString ID = noticep.value(3).toString();
         table->insertRow(rowCount);
         table->setItem(rowCount,0,new QTableWidgetItem(time));
         table->setItem(rowCount,1,new QTableWidgetItem(title));
         QPushButton *button = new QPushButton("查看详情");
+
+        QSqlQuery isread_query;
+        isread_query.prepare("SELECT COUNT(*) FROM isRead WHERE peopleID = ? AND NoticeID = ?"); //我需要登录的用户的账号
+        isread_query.addBindValue(userID);
+        isread_query.addBindValue(ID);
+        isread_query.exec();
+        isread_query.next();
+        bool isread = isread_query.value(0).toInt()>0;
+        QPixmap pixmap(10,10);
+        if (isread) {
+            pixmap.fill(Qt::green);
+        }else {
+            pixmap.fill(Qt::red);
+        }
+
+        QIcon icon(pixmap);
+        button->setIcon(icon);
+        button->setIconSize(QSize(10,10));
+
         table->setCellWidget(rowCount, 2, button);
         connect(button, &QPushButton::released, this, [=](){
             QMessageBox msgbox;
@@ -165,6 +185,20 @@ void uiDesign::showNoice(QTableWidget* table){
             msgbox.setText(content);
             msgbox.setWindowTitle(time+" "+title);
             msgbox.exec();
+
+            if(!isread){
+                QSqlQuery updateRead;
+                updateRead.prepare("INSERT INTO isread (peopleID, NocticeID) VALUES (?, ?)");
+                updateRead.addBindValue(userID);
+                updateRead.addBindValue(ID);
+                updateRead.exec();
+
+                QPixmap pixmap(10,10);
+                pixmap.fill(Qt::green);
+                QIcon icon(pixmap);
+                button->setIcon(icon);
+                button->setIconSize(QSize(10,10));
+            }
         });
     }
     table->resizeColumnsToContents();
@@ -235,7 +269,7 @@ void uiDesign::on_logButton_released()
             nameID+=query.value(1).toString();
             nameID+=")";
             GenerateStudentSchedule(ui->HomeStudentScheduleTable);
-            showNoice(ui->studentNotice_table);
+            showNoice(ui->studentNotice_table, id);
             institutionrole();
         }
         else{
@@ -258,7 +292,7 @@ void uiDesign::on_logButton_released()
             nameID+=query.value(1).toString();
             nameID+=")";
             TeacherSchedule(ui->TeacherSchedule_table);
-            showNoice(ui->teacherNotice_table);
+            showNoice(ui->teacherNotice_table, id);
             institutionrole();
         }
         else{
@@ -301,14 +335,25 @@ void uiDesign::on_logButton_released()
 //转到首页
 void uiDesign::on_home_released()
 {
+    QString name = ui->name->text();
+    QRegularExpression re("\\((\\d+)\\)");
+    QRegularExpressionMatch match = re.match(name);
+
+    if(match.hasMatch()){
+        QString id = match.captured(1);
+    }else {
+        qDebug()<<"NO ID Found!";
+    }
+
     if(role==1) {
         GenerateStudentSchedule(ui->HomeStudentScheduleTable);
-        showNoice(ui->studentNotice_table);
+
+        showNoice(ui->studentNotice_table, id);
         ui->mainPage->setCurrentIndex(1);
     }
     else if(role==2) {
         TeacherSchedule(ui->TeacherSchedule_table);
-        showNoice(ui->teacherNotice_table);
+        showNoice(ui->teacherNotice_table, id);
         ui->mainPage->setCurrentIndex(2);
     }
     else if(role==3) ui->mainPage->setCurrentIndex(3);

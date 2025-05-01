@@ -152,7 +152,7 @@ private slots:
     QString FilterCoursesByInput(QString table,QString institute,QString coursename,QString teacher,QString coursetype,QString coursecode,QString week,QString period);
     int getCourseChosenAmount(QString courseid);
 
-    void showNoice(QTableWidget* table);
+    void showNoice(QTableWidget* table,QString userID);//修改
     void fixPasskey(QSqlQuery &Query,QString passkey,QString table,QString IDname);
 
     void on_toolButton_released();
